@@ -1,0 +1,310 @@
+:root {
+    /* Colores principales */
+    --color-primario: #627159;
+    --color-secundario: #868C81;
+    --color-oscuro: #53594D;
+    --color-claro: #F2F2F2;
+    --color-terra: #C07234;
+
+    /* Sizes */
+    --size-small: 0.5em;
+    --size-default: 1em;
+    --size-big: 3em;
+    --size-very-big: 5em;
+
+    /* Fonts */
+    --font-size-small: 0.7em;
+    --font-size-default: 1em;
+    --font-size-large: 1.5em;
+    --font-size-big: 2em;
+
+    --font-primary: "Alumni Sans Pinstripe";
+    --font-default: "Urbanist";
+  }
+
+* {
+  margin: 0;
+}
+
+body {
+  padding-bottom: 20vh;
+  min-height: 80vh;
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--color-claro);
+  text-decoration: none;
+}
+
+.button {
+  padding: 1em;
+  border: none;
+  background-color: var(--color-claro);
+  font-family:var(--font-default), sans-serif;
+  font-size: large;
+  color: black;
+}
+
+.button:hover {
+  background-color: #e5e5e5;
+}
+
+.title {
+  font-family: var(--font-primary);
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--color-claro);
+}
+
+.mt-small {
+  margin-top: 0.5em;
+}
+
+.mt {
+  margin-top: 1em;
+}
+
+.mt-big {
+  margin-top: 2em;
+}
+
+.mb-small {
+  margin-bottom: 0.5em;
+}
+
+.mb {
+  margin-bottom: 1em;
+}
+
+
+
+/*** Navbar ***/
+
+.navbar {
+  display: flex;
+  align-items: center;                /* como hacer para que quede en el centro el logo  ???? */
+  justify-content: space-between;
+  background-color: var(--color-primario);
+  height: 10vh;
+}
+
+.navbar-items {
+  display: flex;
+  font-family: var(--font-primary);
+  font-weight: 900;
+  font-size: var(--font-size-large);
+}
+
+.navbar-items > li {
+  position: relative; /* Necesario para que el submenu se posicione en relación con el elemento padre */
+  padding: var(--size-default) var(--size-default);
+}
+
+.submenu {
+  display: none; /* se esconde mientras no se pase el mouse */
+  position: absolute;
+  padding: 0px;
+  left: 0;
+  width: 150%;
+  top: 90%; /* Coloca el submenu debajo del elemento padre */
+  background-color: var(--color-primario);
+}
+
+.submenu li a {
+  color: #fff;
+  padding: var(--size-default);
+  display: block;
+}
+
+/* Mostrar submenu al pasar el mouse */
+.dropdown:hover > .submenu {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  flex-grow: 2;     /* Si no coloco 2 no se centra */
+  flex-basis: auto;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav-icon {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: end;
+  padding-right: var(--size-big);
+}
+
+.icon {
+  color: white;
+  padding: var(--size-default);
+}
+
+/**** Fin Navbar ****/
+
+.header-img {
+  background-image: url(../images/taller.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+}
+
+
+/**** Main Index ****/
+main {
+  background-color: var(--color-claro);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection-carousel {
+  width: 80vw;
+  height: 80vh;
+  margin: var(--size-big);
+  display: flex;
+  align-items: stretch;
+  position: relative; /* Asegura que el tamaño del contenedor sea respetado */
+}
+
+.collection-carousel .carousel-inner,
+.collection-carousel .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.collection-carousel img {
+  width: 100%; /* Ajusta la imagen al ancho del contenedor */
+  height: 100%; /* Ajusta la imagen al alto del contenedor */
+  object-fit: cover; /* Asegura que la imagen se recorte sin deformarse */
+  opacity: 0.7;
+}
+
+.carousel-caption {
+  top: 30%;
+  font-size: var(--size-very-big);
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-between;
+  gap: 1.5em;
+  width: 80vw;
+  height: 100vh;
+  margin: 1em;
+}
+
+.product-item {
+  background-color: blue;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.product-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-caption {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+  justify-content: space-between;
+  bottom: 3rem;
+  left: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--size-big);
+}
+
+/**** Fin Main ****/
+
+
+/**** Footer ****/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--color-claro);
+  height: 20vh;
+  width: 100%;
+  background-color: var(--color-secundario);
+  position: absolute;
+  bottom: 0;
+}
+
+/**** Contacto ****/
+.form-container {
+  display: flex;
+  align-items: center;
+  margin: 3em;
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 40%;
+  padding: 5em;
+  background-color: #C07234;
+  margin-right: 2em;
+}
+
+.form input, textarea {
+  margin-bottom: 2em;
+  padding: 1em;
+  font-family: var(--font-default);
+  font-size: var(--font-size-default);
+}
+
+.form h3 {
+  font-size: var(--font-size-big);
+  font-weight: 900;
+}
+
+.form-container img {
+  margin-left: 2em;
+  object-fit: cover;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .navbar-items {
+    display: none;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+
+  .product-caption {
+    bottom: 1rem;       /* debe haber otra manera */
+    left: 1rem;
+    max-width: 80%;
+  }
+
+  .form-container img {display: none;}    /* Como hacer para que se reacomode el form y ocupe mas espacio usando flex */
+}
