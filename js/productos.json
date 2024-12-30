@@ -1,0 +1,42 @@
+[
+    {
+        "category": "tazas", 
+        "name": "Taza Azul",
+        "color": "Azul",
+        "stock": 3,
+        "price": 50,
+        "image": "ysc_taller.jpg"
+    },
+    {
+        "category": "tazas",
+        "name": "Taza Chica",
+        "color": "Amarillo",
+        "stock": 5,
+        "price": 30,
+        "image": "ysc_taller.jpg"
+    },
+    {   
+        "category": "torno",
+        "name": "Pieza de Torno Acanalada Negro",
+        "color": "Negro",
+        "stock": 5,
+        "price": 30,
+        "image": "torno/torno_negro_001.jpeg"
+    },
+    {
+        "category": "platos",
+        "name": "Plato Chico",
+        "color": "Amarillo",
+        "stock": 5,
+        "price": 30,
+        "image": "ysc_taller.jpg"
+    },   
+    {
+        "category": "yoga",
+        "name": "Bhujangasana",
+        "color": "Crema",
+        "stock": 5,
+        "price": 30,
+        "image": "yoga/cobra.jpeg"
+    }   
+]

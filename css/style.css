@@ -61,6 +61,14 @@ a {
   color: var(--color-claro);
 }
 
+.title-category {
+  font-family: var(--font-primary);
+  font-weight: 900;
+  font-size: 10rem;
+  text-transform: uppercase;
+  color: var(--color-oscuro);
+}
+
 .mt-small {
   margin-top: 0.5em;
 }

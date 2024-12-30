@@ -21,19 +21,19 @@
             </div>
             <ul class="navbar-items">
                 <li class="dropdown">
-                    <a href="./templates/tienda/all.html">Tienda</a>
+                    <a onclick="guardarYCambiarPagina('all')">Tienda</a>
                     <ul class="submenu">
-                        <li><a href="templates/tienda/all.html">Todo</a></li>
-                        <li><a href="templates/tienda/platos.html">Platos</a></li>
-                        <li><a href="templates/tienda/tazas.html">Tazas</a></li>
+                        <li><a onclick="guardarYCambiarPagina('all')">Todo</a></li>
+                        <li><a onclick="guardarYCambiarPagina('platos')">Platos</a></li>
+                        <li><a onclick="guardarYCambiarPagina('tazas')">Tazas</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#">Colecciones</a>
                     <ul class="submenu">
-                        <li><a href="templates/tienda/colecciones/capsula_femina.html">Cápsula Fémina</a></li>
-                        <li><a href="templates/tienda/colecciones/azul_marino.html">Azul Marino</a></li>
-                        <li><a href="#">Yoga</a></li>
+                        <li><a onclick="guardarYCambiarPagina('femina')">Cápsula Fémina</a></li>
+                        <li><a onclick="guardarYCambiarPagina('yoga')">Azul Marino</a></li>
+                        <li><a onclick="guardarYCambiarPagina('yoga')">Yoga</a></li>
                     </ul>
                 </li>
                 <li>
@@ -42,7 +42,7 @@
             </ul>
         </div>
         <div class="logo">
-            <img src="./images/ysc_taller.jpg" alt="">
+            <a href="index.html"><img src="./images/ysc_taller.jpg" class="logo" alt=""></a>
         </div>
         <div class="nav-icon">
             <i class="fa-solid fa-bag-shopping fa-xl icon"></i><a href="#"></a></i>
@@ -52,7 +52,7 @@
 
     <header>
         <div class="header-img">
-            <a href="./templates/tienda/all.html"></a>
+            <a href=""></a>
         </div>
     </header>
 
@@ -95,6 +95,7 @@
                 </button>
               </div>
         </section>
+
         <section class="product-container">
             <div class="product-item">
                 <img src="" alt="">
@@ -149,6 +150,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
+    <script src="../js/script.js"></script>
 </body>
 </html>
