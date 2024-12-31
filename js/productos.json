@@ -1,42 +1,286 @@
 [
     {
+        "id": 1,
         "category": "tazas", 
-        "name": "Taza Azul",
-        "color": "Azul",
+        "name": "Taza con Asa",
+        "color": "Crudo",
+        "descripcion": "Esta es la descripcion...",
         "stock": 3,
         "price": 50,
-        "image": "ysc_taller.jpg"
+        "image": "tazas/tazas_001.jpeg"
     },
     {
+        "id": 2,
         "category": "tazas",
         "name": "Taza Chica",
-        "color": "Amarillo",
+        "color": "Celeste",
+        "descripcion": "Esta es la descripcion...",
         "stock": 5,
         "price": 30,
-        "image": "ysc_taller.jpg"
+        "image": "tazas/tacitas.jpg"
     },
     {   
+        "id": 3,
         "category": "torno",
         "name": "Pieza de Torno Acanalada Negro",
         "color": "Negro",
+        "descripcion": "Esta es la descripcion...",
         "stock": 5,
         "price": 30,
         "image": "torno/torno_negro_001.jpeg"
     },
     {
+        "id": 4,
         "category": "platos",
         "name": "Plato Chico",
-        "color": "Amarillo",
+        "color": "Lila",
+        "descripcion": "Esta es la descripcion...",
         "stock": 5,
-        "price": 30,
-        "image": "ysc_taller.jpg"
+        "price": 25,
+        "image": "platos/plato_001.jpeg"
     },   
     {
+        "id": 5,
         "category": "yoga",
         "name": "Bhujangasana",
         "color": "Crema",
         "stock": 5,
+        "price": 50,
+        "image": "colecciones/yoga/cobra.jpeg"
+    },
+    {
+        "id": 6,
+        "category": "platos",
+        "name": "Plato Perros",
+        "color": "Crudo",
+        "descripcion": "Esta es la descripcion...",
+        "stock": 5,
         "price": 30,
-        "image": "yoga/cobra.jpeg"
-    }   
+        "image": "platos/plato_002.jpeg"
+    },      
+    {
+        "id": 7,
+        "category": "platos",
+        "name": "Plato Matriz",
+        "color": "Coral",
+        "descripcion": "Esta es la descripcion...",
+        "stock": 5,
+        "price": 30,
+        "image": "platos/plato_004.jpeg"
+    },   
+    {
+        "id": 8,
+        "category": "platos",
+        "name": "Plato Doble Linea",
+        "color": "Azul y Bordo",
+        "descripcion": "Esta es la descripcion...",
+        "stock": 2,
+        "price": 30,
+        "image": "platos/plato_003.jpeg"
+    },   
+    {
+        "id": 9,
+        "category": "jarrones",
+        "name": "Jarron Patos",
+        "color": "Verde",
+        "descripcion": "Esta es la descripcion...",
+        "stock": 2,
+        "price": 35,
+        "image": "jarrones/jarron_001.jpeg"
+    },   
+    {
+        "id": 10,
+        "category": "jarrones",
+        "name": "Jarron Bicolor",
+        "color": "Celeste",
+        "descripcion": "Esta es la descripcion...",
+        "stock": 2,
+        "price": 35,
+        "image": "jarrones/jarron_002.jpeg"
+    },   
+    {
+        "id": 11,
+        "category": "jarrones",
+        "name": "Jarron Abstract",
+        "color": "Verde",
+        "descripcion": "Esta es la descripcion...",
+        "stock": 5,
+        "price": 35,
+        "image": "jarrones/jarron_003.jpeg"
+    },   
+    {
+        "id": 12,
+        "category": "cuencos",
+        "name": "Cuencos Colores",
+        "color": "",
+        "descripcion": "Esta es la descripcion...",
+        "stock": 10,
+        "price": 40,
+        "image": "cuencos/cuencos_colores.jpeg"
+    },   
+    {
+        "id": 13,
+        "category": "cuencos",
+        "name": "Cuencos Acanalados",
+        "color": "Verde/Crudo",
+        "descripcion": "Esta es la descripcion...",
+        "stock": 5,
+        "price": 40,
+        "image": "cuencos/cuencos_001.jpeg"
+    },   
+    {
+        "id": 14,
+        "category": "cuencos",
+        "name": "Set Cuencos Patrón Fino",
+        "color": "Violeta",
+        "descripcion": "Esta es la descripcion...",
+        "stock": 10,
+        "price": 45,
+        "image": "cuencos/cuencos_003.jpeg"
+    },  
+    {
+        "id": 14,
+        "category": "cuencos",
+        "name": "Set Cuencos Patrón Grueso",
+        "color": "Rojo",
+        "descripcion": "Esta es la descripcion...",
+        "stock": 10,
+        "price": 45,
+        "image": "cuencos/cuencos_002.jpeg"
+    },    
+    {
+        "id": 15,
+        "category": "yoga",
+        "name": "Halasana",
+        "color": "Crema",
+        "stock": 2,
+        "price": 50,
+        "image": "colecciones/yoga/arado.jpeg"
+    },
+    {
+        "id": 16,
+        "category": "yoga",
+        "name": "Ustrasana",
+        "color": "Crema",
+        "stock": 5,
+        "price": 50,
+        "image": "colecciones/yoga/camello.jpeg"
+    },
+    {
+        "id": 17,
+        "category": "yoga",
+        "name": "Paschimottanasana",
+        "color": "Crema",
+        "stock": 3,
+        "price": 50,
+        "image": "colecciones/yoga/pinza.jpeg"
+    },
+    {
+        "id": 18,
+        "category": "yoga",
+        "name": "Setubandha Sarvangasana",
+        "color": "Crema",
+        "stock": 5,
+        "price": 50,
+        "image": "colecciones/yoga/puente.jpeg"
+    },
+    {
+        "id": 19,
+        "category": "yoga",
+        "name": "Medio Puente",
+        "color": "Crema",
+        "stock": 4,
+        "price": 50,
+        "image": "colecciones/yoga/medio_puente.jpeg"
+    },
+    {
+        "id": 20,
+        "category": "torno",
+        "name": "Set Contenedores Negros x2",
+        "color": "Negro",
+        "stock": 5,
+        "price": 55,
+        "image": "colecciones/torno/torno_negro_001.jpeg"
+    },
+    {
+        "id": 21,
+        "category": "torno",
+        "name": "Contenedor Alto Negro",
+        "color": "Negro",
+        "stock": 5,
+        "price": 25,
+        "image": "colecciones/torno/torno_negro_002.jpeg"
+    },
+    {
+        "id": 22,
+        "category": "torno",
+        "name": "Set Contenedores Negros x3",
+        "color": "Negro",
+        "stock": 5,
+        "price": 70,
+        "image": "colecciones/torno/set_cuencos_negros.jpeg"
+    },
+    {
+        "id": 23,
+        "category": "torno",
+        "name": "Vasitos Negros",
+        "color": "Negro",
+        "stock": 8,
+        "price": 20,
+        "image": "colecciones/torno/vacitos_negros.jpeg"
+    },
+    {
+        "id": 24,
+        "category": "torno",
+        "name": "Set Portasahumerio",
+        "color": "Oro",
+        "stock": 3,
+        "price": 35,
+        "image": "colecciones/torno/portasahumerio_oro.jpeg"
+    },
+    {
+        "id": 25,
+        "category": "torno",
+        "name": "Porta Celular",
+        "color": "Celeste",
+        "stock": 10,
+        "price": 14,
+        "image": "colecciones/torno/portacelu.jpeg"
+    },
+    {
+        "id": 26,
+        "category": "torno",
+        "name": "Lapicero",
+        "color": "Crudo",
+        "stock": 10,
+        "price": 25,
+        "image": "colecciones/torno/lapicero.jpeg"
+    },
+    {
+        "id": 27,
+        "category": "ceniceros",
+        "name": "Cenicero Formas",
+        "color": "Negro y Rosa",
+        "stock": 1,
+        "price": 25,
+        "image": "ceniceros/ceni_001.jpeg"
+    },
+    {
+        "id": 28,
+        "category": "ceniceros",
+        "name": "Cenicero 'Donde hubo fuego...'",
+        "color": "Rojo",
+        "stock": 1,
+        "price": 25,
+        "image": "ceniceros/ceni_002.jpeg"
+    },
+    {
+        "id": 29,
+        "category": "ceniceros",
+        "name": "Cenicero Corazon",
+        "color": "Rosa",
+        "stock": 1,
+        "price": 25,
+        "image": "ceniceros/cenicero.jpeg"
+    }
 ]

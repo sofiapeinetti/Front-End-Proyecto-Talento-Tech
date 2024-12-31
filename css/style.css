@@ -48,6 +48,7 @@ a {
   font-family:var(--font-default), sans-serif;
   font-size: large;
   color: black;
+  align-self: flex-start;
 }
 
 .button:hover {
@@ -67,6 +68,7 @@ a {
   font-size: 10rem;
   text-transform: uppercase;
   color: var(--color-oscuro);
+  margin-top: 10vh;
 }
 
 .mt-small {
@@ -89,16 +91,33 @@ a {
   margin-bottom: 1em;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
 
 
 /*** Navbar ***/
 
 .navbar {
+  top: 0;
+  right: 0;
+  position: fixed;
   display: flex;
   align-items: center;                /* como hacer para que quede en el centro el logo  ???? */
   justify-content: space-between;
   background-color: var(--color-primario);
   height: 10vh;
+  width: 100vw;
+  z-index: 998;
 }
 
 .navbar-items {
@@ -180,6 +199,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 .collection-carousel {
@@ -189,6 +209,7 @@ main {
   display: flex;
   align-items: stretch;
   position: relative; /* Asegura que el tamaño del contenedor sea respetado */
+  justify-content: center;
 }
 
 .collection-carousel .carousel-inner,
@@ -209,6 +230,8 @@ main {
   font-size: var(--size-very-big);
 }
 
+/**** Productos ****/
+
 .product-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -216,12 +239,12 @@ main {
   justify-content: space-between;
   gap: 1.5em;
   width: 80vw;
-  height: 100vh;
   margin: 1em;
+  flex-grow: 1;
 }
 
 .product-item {
-  background-color: blue;
+  background-color: var(--color-oscuro);
   position: relative;
   display: flex;
   align-items: stretch;
@@ -244,6 +267,7 @@ main {
   font-family: Arial, Helvetica, sans-serif;
   font-size: var(--size-big);
 }
+/***** fin productos ****/
 
 /**** Fin Main ****/
 
@@ -266,8 +290,8 @@ footer {
 .form-container {
   display: flex;
   align-items: center;
-  margin: 3em;
-
+  margin: 2em;
+  margin-top: 20vh;
 }
 
 .form {
@@ -297,7 +321,82 @@ footer {
   object-fit: cover;
 }
 
+/*** Carrito ***/
+.carrito-container {
+  position: fixed;
+  top: 0;
+  right: -500px; /* inicia fuera de la pantalla */
+  width: 500px;
+  height: 100vh; 
+  background-color: var(--color-primario);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease; /* Animación suave */
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
 
+.carrito-container.open {
+  right: 0;
+}
+
+.carrito-header {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: xx-large;
+  color: var(--color-claro);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--size-default);
+}
+
+.carrito-productos {
+  font-family: var(--font-default);
+  color: var(--color-claro);
+  padding: var(--size-default);
+  display: flex;
+  gap: 15px;
+  flex-direction: column; 
+  flex-grow: 1;  /* Hace que ocupe el espacio disponible */
+  overflow-y: auto;  /* Permite desplazamiento si hay demasiados productos */
+}
+
+.carrito-productos img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; 
+  object-position: center;
+  margin-right: 50px; 
+}
+
+.carrito-productos > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Alinea la imagen y los detalles verticalmente */
+  gap: 15px; /* Espacio entre la imagen y los detalles */
+}
+
+.producto-descripcion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: var(--size-default)
+}
+
+.carrito-productos div button {
+  align-self: flex-end;
+}
+
+.carrito-footer {
+  display: flex;
+  justify-content: center;
+  padding: var(--size-default);
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+
+/**** fin carrito *****/
 
 @media only screen and (max-width: 800px) {
   .navbar-items {

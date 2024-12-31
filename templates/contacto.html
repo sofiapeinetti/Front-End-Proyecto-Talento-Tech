@@ -15,21 +15,26 @@
 <body>
     <nav class="navbar">
         <div>  
+            <div class="hamburger">
+                <i class="fa-solid fa-bars icon"></i>
+            </div>
             <ul class="navbar-items">
                 <li class="dropdown">
-                    <a href="../templates/tienda/all.html">Tienda</a>
+                    <a onclick="guardarYCambiarPagina('all')">Tienda</a>
                     <ul class="submenu">
-                        <li><a href="../templates/tienda/all.html">Todo</a></li>
-                        <li><a href="../templates/tienda/platos.html">Platos</a></li>
-                        <li><a href="../templates/tienda/tazas.html">Tazas</a></li>
+                        <li><a onclick="guardarYCambiarPagina('all')">Todo</a></li>
+                        <li><a onclick="guardarYCambiarPagina('platos')">Platos</a></li>
+                        <li><a onclick="guardarYCambiarPagina('tazas')">Tazas</a></li>
+                        <li><a onclick="guardarYCambiarPagina('jarrones')">Jarrones</a></li>
+                        <li><a onclick="guardarYCambiarPagina('cuencos')">Cuencos</a></li>
+                        <li><a onclick="guardarYCambiarPagina('portasahumerios')">Portasahumerios</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#">Colecciones</a>
                     <ul class="submenu">
-                        <li><a href="../templates/tienda/colecciones/capsula_femina.html">Cápsula Fémina</a></li>
-                        <li><a href="../templates/tienda/colecciones/azul_marino.html">Azul Marino</a></li>
-                        <li><a href="#">Yoga</a></li>
+                        <li><a onclick="guardarYCambiarPagina('torno')">Torno</a></li>
+                        <li><a onclick="guardarYCambiarPagina('yoga')">Yoga</a></li>
                     </ul>
                 </li>
                 <li>
@@ -38,13 +43,29 @@
             </ul>
         </div>
         <div class="logo">
-            <img src="../images/ysc_taller.jpg" alt="logo">
+            <a href="../index.html"><img src="../images/ysc_taller.jpg" class="logo" alt=""></a>
         </div>
         <div class="nav-icon">
-            <i class="fa-solid fa-bag-shopping fa-xl icon"></i><a href="#"></a></i>
+            <i id="boton-carrito" class="fa-solid fa-bag-shopping fa-xl icon"></i>
             <i class="fa-solid fa-magnifying-glass fa-xl icon"></i><a href="#"></a></i>
         </div>
     </nav>
+
+    <div class="overlay">
+        <div id="carrito-container" class="carrito-container">
+            <div class="carrito-header">
+                <h4>Carrito</h4>
+                <button id="cerrar-carrito" class="button">X</button>
+            </div>
+            <div class="carrito-productos">
+
+            </div>
+            <div class="carrito-footer">
+                <button class="button">Finalizar</button>
+            </div>
+        </div>
+    </div>
+
         <section class="form-container">
             <form action="" method="POST" class="form">
                 <h3 class="title mb-small">Dejanos un mensaje</h3>
