@@ -22,12 +22,12 @@
     {   
         "id": 3,
         "category": "torno",
-        "name": "Pieza de Torno Acanalada Negro",
-        "color": "Negro",
+        "name": "Pieza de Torno Acanalada Crudo",
+        "color": "Crudo",
         "descripcion": "Esta es la descripcion...",
         "stock": 5,
-        "price": 30,
-        "image": "torno/torno_negro_001.jpeg"
+        "price": 35,
+        "image": "colecciones/torno/florero.jpeg"
     },
     {
         "id": 4,
@@ -282,5 +282,32 @@
         "stock": 1,
         "price": 25,
         "image": "ceniceros/cenicero.jpeg"
+    },
+    {
+        "id": 30,
+        "category": "portasahumerios",
+        "name": "Portasahumerio Chica",
+        "color": "Crudo",
+        "stock": 1,
+        "price": 30,
+        "image": "portasahumerios/sahu_busto.jpeg"
+    },
+    {
+        "id": 31,
+        "category": "portasahumerios",
+        "name": "Portasahumerios Varios",
+        "color": "Crudo",
+        "stock": 10,
+        "price": 15,
+        "image": "portasahumerios/sahu_varios.jpeg"
+    },
+    {
+        "id": 32,
+        "category": "portasahumerios",
+        "name": "Portasahumerio Beso",
+        "color": "Rosa",
+        "stock": 1,
+        "price": 25,
+        "image": "portasahumerios/portasahumerio_001.jpg"
     }
 ]
