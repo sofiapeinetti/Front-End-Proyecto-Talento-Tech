@@ -1,7 +1,9 @@
+const baseURL = location.origin;
+
 function guardarYCambiarPagina(categoriaActual) {
     localStorage.setItem('categoriaSeleccionada', categoriaActual);
     console.log('Categoria seleccionada guardada:', categoriaActual);
-    window.location.href = './templates/productos.html';
+    window.location.href = baseURL + '/templates/productos.html';
 }
 
 
